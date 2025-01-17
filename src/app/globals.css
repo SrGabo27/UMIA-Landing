@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* App colors */
+  --umia-white: #f8f8f8;
+  --umia-light-gray: #a5a5a5;
+  --umia-light-gray2: #8B8B8B;
+  --umia-gray: #b2c2c4;
+  --umia-gray2: #7f7f7f;
+  --umia-green: #307e80;
+  --umia-green-dark: #194849;
+  --light-green: #307e80;
+  --text-gray: #999999;
+  --green: #186666;
+  --default-text: #161616;
+}
+
+.card-shadow {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+   /* 5. Color default for texts */
+   color: var(--default-text);
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/* 9. Font Family for Titles and Subtitles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Sora";
+}
+
+/*
+  10. Create a root stacking context
+*/
+#root,
+#__next {
+  margin: 0 !important;
+  padding: 0 !important;
+  isolation: isolate;
+}
