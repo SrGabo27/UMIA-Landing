@@ -20,7 +20,7 @@ export const Footer: FC = () => {
       <ul className="flex flex-row 2xl:flex-col my-[30px] 2xl:my-0  gap-8">
         <li>
           <h4 className="font-bold text-xl">Información Legal</h4>
-          <Link href={`${process.env.URL_TYC_DOCUMENT}`} className="text-md">
+          <Link href={`/umia-términos-y-condiciones.pdf`} target="_blank" rel="noopener noreferrer" className="text-md">
             Términos y condiciones
           </Link>
         </li>
@@ -28,7 +28,8 @@ export const Footer: FC = () => {
         <li>
           <h4 className="font-bold text-xl">Privacidad y Seguridad</h4>
           <Link
-            href={`${process.env.URL_SAFETY_MANUAL_DOCUMENT}`}
+            href={`/umia-manual-de-seguridad-y-privacidad.pdf`}
+            target="_blank" rel="noopener noreferrer"
             className="text-md"
           >
             Política de privacidad
